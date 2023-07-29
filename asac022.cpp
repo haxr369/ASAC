@@ -5,14 +5,14 @@ using namespace std;
 
 int K, switched, ans;
 string N;
-
+int mp[10], visited[1000004][11];
 /**
  * K번 스위칭을 시도해서 G라는 숫자가 나온다면, 다른 방식으로 K번 스위칭해서 G를 굳이 다시 만들 필요 없다 -> 방문체크
  * N은 최대 1000000까지 가능하므로 visited[1000004][14] -> 생성한 숫자에 방문체크!!
  * 
 */
 
-int mp[10];
+
 
 int check(){
     int cnt = 0;
